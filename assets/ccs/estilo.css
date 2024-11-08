@@ -1,0 +1,131 @@
+/* RESET GERAL */
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.fundo {
+
+background: url("../images/bacgroud.png");
+background-size: cover;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.fundo h1 {
+
+color: rgb(238, 130, 193);
+font-size: 3.5rem;
+text-shadow: 6px 6px blue; 
+position: absolute;
+top: 5%;
+
+}
+
+.calculadora {
+    background-color: #31112960;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px blue;
+}
+
+.calculadora h2 {
+    color: blue;
+    text-align: center;
+    text-shadow: 3px 3px #fff;
+
+}
+
+#resultado {
+    background-color: #fff;
+    height: 2.5rem;
+    text-align: right;
+    padding: 5px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+    width: 215px;
+    overflow: hidden;
+}
+table {
+    margin: 0 auto;
+}
+
+button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 3px;
+    box-shadow: 3px 3px #413f3f;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: red;
+
+}
+
+button:active {
+    font-size: 19px;
+    box-shadow: 1px 1px #413f3f;
+}
+
+td[rowspan="2"] button {
+    background: #C53DA4;
+    color: #fff;
+    height: 108px;
+
+
+}
+
+td[colspan="2"] button {
+    width: 106px;
+}
+
+
+@media (max-width: 500px) {
+    .calculadora {
+        width: 90vw;
+        height: 60vh;
+
+    }
+    .calculadora h2 {
+        font-size: 2.5rem;
+    }
+    #resultado {
+       
+        height: 3rem;     
+        padding: 0.5rem;
+        font-size: 2rem;
+        width: 300px;   
+    }
+    button {
+        width: 4rem;
+        height: 4rem;
+        font-size: 20px;    
+        margin: 4px;
+    }
+    td[rowspan="2"] button {
+        height: 136px;
+    }
+    
+    td[colspan="2"] button {
+        width: 136px;
+    }
+    
+
+
+    
+}
